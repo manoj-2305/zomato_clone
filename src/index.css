@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter antialiased text-gray-800 bg-gray-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-zomato-400 text-white rounded-lg hover:bg-zomato-500 transition-all duration-200 font-medium;
+  }
+  
+  .btn-outline {
+    @apply px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-all duration-200 font-medium;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-zomato-200 focus:border-zomato-400 transition-all duration-200 outline-none;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-card hover:shadow-hover transition-all duration-200;
+  }
+
+  .badge {
+    @apply px-2 py-1 text-sm font-medium rounded-md;
+  }
+
+  .badge-success {
+    @apply bg-green-50 text-green-700;
+  }
+
+  .badge-warning {
+    @apply bg-yellow-50 text-yellow-700;
+  }
+
+  .badge-rating {
+    @apply bg-green-50 text-green-700 flex items-center gap-1;
+  }
+
+  .nav-link {
+    @apply text-gray-500 hover:text-zomato-400 transition-colors duration-200;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-gray-800 mb-6;
+  }
+
+  .restaurant-card {
+    @apply bg-white rounded-lg shadow-card hover:shadow-hover transition-all duration-200 overflow-hidden;
+  }
+
+  .restaurant-image {
+    @apply w-full h-48 object-cover transition-transform duration-300 hover:scale-105;
+  }
+
+  .restaurant-info {
+    @apply p-4;
+  }
+
+  .restaurant-name {
+    @apply text-lg font-semibold text-gray-800 mb-1;
+  }
+
+  .restaurant-cuisine {
+    @apply text-sm text-gray-500;
+  }
+
+  .restaurant-meta {
+    @apply flex items-center gap-3 mt-2 text-sm text-gray-500;
+  }
+
+  .search-bar {
+    @apply w-full max-w-2xl px-6 py-4 bg-white rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-zomato-200;
+  }
+
+  .filter-section {
+    @apply mb-6;
+  }
+
+  .filter-title {
+    @apply text-sm font-medium text-gray-700 mb-2;
+  }
+
+  .filter-option {
+    @apply flex items-center gap-2 text-gray-600 hover:text-gray-900 cursor-pointer;
+  }
+
+  .menu-item {
+    @apply flex gap-4 p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-all duration-200;
+  }
+
+  .menu-image {
+    @apply w-24 h-24 rounded-lg object-cover;
+  }
+
+  .menu-info {
+    @apply flex-1;
+  }
+
+  .menu-title {
+    @apply text-lg font-medium text-gray-800;
+  }
+
+  .menu-description {
+    @apply text-sm text-gray-500 mt-1;
+  }
+
+  .menu-price {
+    @apply text-lg font-medium text-gray-900 mt-2;
+  }
+
+  .order-card {
+    @apply bg-white p-6 rounded-lg shadow-card mb-4;
+  }
+
+  .profile-section {
+    @apply bg-white p-6 rounded-lg shadow-card;
+  }
+}
