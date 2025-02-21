@@ -59,7 +59,4 @@ A fully responsive and interactive **Zomato Clone** built using **React (JSX), H
 | **Firebase/Auth API** | User authentication |
 | **Redux** | State management |
 
----
-
-## 📂 Folder Structure
 
